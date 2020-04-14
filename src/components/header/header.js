@@ -9,42 +9,49 @@ import DropArrow from '../assets/round-dropdown-dark.png';
 import Hamburger from '../assets/hamburger.svg';
 
 export default class Header extends Component {
+    activateModal() {
+        var elModal1 = document.querySelector('.modalCover');
+        var elModal2 = document.querySelector('#PinEntry');
+        elModal1.classList.toggle('active');
+        elModal2.classList.toggle('active');
+    }
+
     render() {
         return (
             <header>
-        <div class="container">
-            <img class="logo" src={logo} />
-            <button class="row"><a href="./homepage.html">
-              <img src={spade} />
-              <span>Casino</span></a>
-          </button>
-            <button class="row mar"><a href="./allgames.html">
-              <img src={live} />
-              <span>All Games</span></a>
-          </button>
-            <button class="row border modalActivate">
-              <span>#2218</span>
-          </button>
-            <button class="round moon">
-              <a href="../homepage-loggedin.html"><img src={moon} /></a>
-          </button>
-            <button class="profile large langselect" target="LangDropdown">
-              <img class="selected" src={USAFlag} />
-              <img class="arrow" src={DropArrow} />
-          </button>
-            <ul id="LangDropdown">
-                <button class="lang-item">
-                  <img src={USAFlag} /> 
-                  <span>English (US)</span>
-              </button>
-                <button class="lang-item">
-                  <img src={SpanFlag} /> 
-                  <span>Spanish (MEX)</span>
-              </button>
-            </ul>
-            <button class="mobileNav"><img src={Hamburger}/></button>
-        </div>
-    </header>
+                <div class="container">
+                    <img class="logo" src={logo} />
+                    <button class="row"><a href="./homepage.html">
+                    <img src={spade} />
+                    <span>Casino</span></a>
+                </button>
+                    <button class="row mar"><a href="./allgames.html">
+                    <img src={live} />
+                    <span>All Games</span></a>
+                </button>
+                    <button onClick={this.activateModal} class="row border modalActivate">
+                    <span>#2218</span>
+                </button>
+                    <button class="round moon">
+                    <a href="../homepage-loggedin.html"><img src={moon} /></a>
+                </button>
+                    <button class="profile large langselect" target="LangDropdown">
+                    <img class="selected" src={USAFlag} />
+                    <img class="arrow" src={DropArrow} />
+                </button>
+                    <ul id="LangDropdown">
+                        <button class="lang-item">
+                        <img src={USAFlag} /> 
+                        <span>English (US)</span>
+                    </button>
+                        <button class="lang-item">
+                        <img src={SpanFlag} /> 
+                        <span>Spanish (MEX)</span>
+                    </button>
+                    </ul>
+                    <button class="mobileNav"><img src={Hamburger}/></button>
+                </div>
+            </header>
         )
     }
 }

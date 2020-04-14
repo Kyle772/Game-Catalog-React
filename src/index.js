@@ -8,10 +8,15 @@ import Header from './components/header/header';
 import SubHeader from './components/subhead/subhead';
 import Footer from './components/footer/footer';
 import FloatingBar from './components/floatingbar/floatingbar';
-import Chat from './components/chat/chat'
+import Chat from './components/chat/chat';
+import PinPad from './components/pin/pin';
+import SpinWheel from './components/spinwheel/spinwheel';
 
 ReactDOM.render(
     <React.StrictMode>
+      <div class="modalCover active"></div>
+      <PinPad/>
+      <SpinWheel/>
       <Header/>
       <SubHeader/>
       <section id>
