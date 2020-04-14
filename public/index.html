@@ -27,80 +27,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
-<body>
+<body id="root">
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <header>
-        <div class="container">
-            <img class="logo" src="./assets/logo.png" />
-            <button class="row"><a href="./homepage.html">
-              <img src="./assets/spade.png" />
-              <span>Casino</span></a>
-          </button>
-            <button class="row mar"><a href="./allgames.html">
-              <img src="./assets/live.png" />
-              <span>All Games</span></a>
-          </button>
-            <button class="row border modalActivate">
-              <span>#2218</span>
-          </button>
-            <button class="round moon">
-              <a href="../homepage-loggedin.html"><img src="./assets/moon.png" /></a>
-          </button>
-            <button class="profile large langselect" target="LangDropdown">
-              <img class="selected" src="./assets/flags/usa.png" />
-              <img class="arrow" src="./assets/round-dropdown-dark.png" />
-          </button>
-            <ul id="LangDropdown">
-                <button class="lang-item">
-                  <img src="./assets/flags/usa.png" /> 
-                  <span>English (US)</span>
-              </button>
-                <button class="lang-item">
-                  <img src="./assets/flags/mex-spanish.png" /> 
-                  <span>Spanish (MEX)</span>
-              </button>
-            </ul>
-            <button class="mobileNav"><img src="./assets/hamburger.svg"/></button>
-        </div>
-    </header>
-    <header class="secondary">
-        <div class="container">
-            <button class="row">
-              <img src="./assets/diamond.png" />
-              <span>Video Slots</span>
-          </button>
-            <button class="row">
-              <img src="./assets/dice.png" />
-              <span>Table Games</span>
-          </button>
-            <button class="row">
-              <img src="./assets/slots.png" />
-              <span>Classic Slots</span>
-          </button>
-            <button class="row">
-              <img src="./assets/poker.png" />
-              <span>Video Poker</span>
-          </button>
-            <button class="row">
-              <img src="./assets/scratch.png" />
-              <span>Scratch Cards</span>
-          </button>
-            <button class="row mar">
-              <img src="./assets/jackpot.png" />
-              <span>Jackpot Games</span>
-          </button>
-            <button class="balance rounded"><span class="text">Balance:</span> <span class="currency">$78.55</span><span class="refresh"></span></button>
-            <button class="notification rounded"> </button>
-            <button class="profile rounded" target="account-dropdown">lawrence.do</button>
-            <div id="account-dropdown">
-                <button><a href="./favorited.html"><img src="../assets/favorite.svg">Favorites</a></button>
-                <button><a href="./account.html"><img src="../assets/profile.png">Account</a></button>
-                <button><a href="./bettinghistory.html"><img src="../assets/logoicon.png">History</a></button>
-            </div>
-            <button class="logout rounded">Logout</button>
-        </div>
-    </header>
-    <div id="root"></div>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
@@ -111,58 +39,9 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
-    <footer>
-        © 2020
-    </footer>
-    <section class="floating bottom">
-        <button class="wheelspin wheelActivate"></button>
-        <button class="chat chatActivate"><img src="./assets/chat_icon.png"/>
-      </button>
-    </section>
-    <div id="ChatWindow">
-        <div class="top">
-            <button class="collapse chatCollapse"><img src="./assets/collapsechat.png" /></button>
-            <button class="close chatDeactivate"><img src="./assets/close.png" /></button>
-        </div>
-        <div class="chat-messages">
-            <div class="chat-message to-me">
-                <img class="profile-photo" src="./assets/defaultprofile.png">
-                <p class="chat-content">This is a test message</p>
-            </div>
-            <div class="chat-message from-me">
-                <img class="profile-photo" src="./assets/defaultprofile.png">
-                <p class="chat-content">This is a test message</p>
-            </div>
-            <div class="chat-message from-me">
-                <img class="profile-photo" src="./assets/defaultprofile.png">
-                <p class="chat-content">This is a test message</p>
-            </div>
-            <div class="chat-message from-me">
-                <img class="profile-photo" src="./assets/defaultprofile.png">
-                <p class="chat-content">This is a test message</p>
-            </div>
-            <div class="chat-message from-me">
-                <img class="profile-photo" src="./assets/defaultprofile.png">
-                <p class="chat-content">This is a test message</p>
-            </div>
-            <div class="chat-message from-me">
-                <img class="profile-photo" src="./assets/defaultprofile.png">
-                <p class="chat-content">This is a test message</p>
-            </div>
-            <div class="chat-message from-me">
-                <img class="profile-photo" src="./assets/defaultprofile.png">
-                <p class="chat-content">This is a test message</p>
-            </div>
-            <div class="chat-message from-me">
-                <img class="profile-photo" src="./assets/defaultprofile.png">
-                <p class="chat-content">This is a test message</p>
-            </div>
-        </div>
-        <div class="bottom">
-            <input placeholder="Type your message here..." type="text"></input>
-            <button class="send-chat-message"><img src="./assets/send.png"></button>
-        </div>
-    </div>
+
+
+
     <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
     <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
     <script type="text/javascript" src="../global.js"></script>
