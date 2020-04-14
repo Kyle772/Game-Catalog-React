@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="10px" height="17px" viewBox="0 0 10 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>dark/balance_icon</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.5" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Artboard" transform="translate(-231.000000, -268.000000)" stroke="#FFFFFF">
+            <g id="dark/balance_icon" transform="translate(232.000000, 269.000000)">
+                <line x1="4.06956522" y1="3.41060513e-14" x2="4.06956522" y2="14.5901449" id="Path"></line>
+                <path d="M7.46086957,2.65275362 L2.37391304,2.65275362 C1.06283707,2.65275362 5.82645043e-13,3.69197209 5.82645043e-13,4.97391304 C5.82645043e-13,6.25585399 1.06283707,7.29507246 2.37391304,7.29507246 L5.76521739,7.29507246 C7.07629334,7.29507249 8.13913038,8.33429095 8.13913038,9.61623188 C8.13913038,10.8981728 7.07629334,11.9373913 5.76521739,11.9373913 L5.82645043e-13,11.9373913" id="Path"></path>
+            </g>
+        </g>
+    </g>
+</svg>

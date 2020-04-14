@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="17px" height="17px" viewBox="0 0 17 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>dark/chat_send</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Artboard" transform="translate(-224.000000, -864.000000)" stroke="#787D90" stroke-width="2">
+            <g id="dark/chat_send" transform="translate(225.000000, 865.000000)">
+                <line x1="15" y1="0" x2="6.75" y2="8.25" id="Path"></line>
+                <polygon id="Path" points="15 0 9.75 15 6.75 8.25 0 5.25"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

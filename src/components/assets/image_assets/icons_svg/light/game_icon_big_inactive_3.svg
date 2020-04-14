@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="35px" height="37px" viewBox="0 0 35 37" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>light/game_icon_big_inactive_3</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.5">
+        <g id="Artboard" transform="translate(-885.000000, -483.000000)" stroke="#242735">
+            <g id="light/game_icon_big_inactive_3" transform="translate(886.000000, 484.000000)">
+                <rect id="Rectangle" x="0" y="3.97727273" width="27.8409091" height="31.0227273" rx="3"></rect>
+                <rect id="Rectangle" x="3.97727273" y="7.95454545" width="19.8863636" height="10.3409091" rx="1"></rect>
+                <line x1="10.3409091" y1="18.2954545" x2="10.3409091" y2="7.95454545" id="Path-2"></line>
+                <line x1="17.5" y1="18.2954545" x2="17.5" y2="7.95454545" id="Path-2-Copy"></line>
+                <circle id="Oval" cx="9.14772727" cy="25.8522727" r="2.78409091"></circle>
+                <circle id="Oval-Copy-5" cx="18.6931818" cy="25.8522727" r="2.78409091"></circle>
+                <circle id="Oval-Copy-6" cx="31.8181818" cy="11.9318182" r="1.59090909"></circle>
+                <path d="M6.77272727,1.04360964e-14 L21.0681818,1.04360964e-14 C22.1727513,1.21952999e-14 23.0681818,0.8954305 23.0681818,2 L23.0681818,3.97727273 L23.0681818,3.97727273 L4.77272727,3.97727273 L4.77272727,2 C4.77272727,0.8954305 5.66815777,1.06390026e-14 6.77272727,1.04360964e-14 Z" id="Rectangle"></path>
+                <path d="M27.8409091,27.8409091 C30.0374962,27.8409091 31.8181818,26.0602234 31.8181818,23.8636364 L31.8181818,13.5227273 L31.8181818,13.5227273" id="Path-5"></path>
+            </g>
+        </g>
+    </g>
+</svg>

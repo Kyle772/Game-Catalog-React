@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="15px" height="16px" viewBox="0 0 15 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>light/calendar</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Artboard" transform="translate(-788.000000, -796.000000)" stroke="#5D616F">
+            <g id="light/calendar" transform="translate(789.000000, 797.000000)">
+                <rect id="Rectangle" x="0" y="1.4" width="12.6" height="12.6" rx="2"></rect>
+                <line x1="9.1" y1="0" x2="9.1" y2="2.8" id="Path"></line>
+                <line x1="3.5" y1="0" x2="3.5" y2="2.8" id="Path"></line>
+                <line x1="1.83852933e-13" y1="5.6" x2="12.6" y2="5.6" id="Path"></line>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="18px" viewBox="0 0 16 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>dark/bell_active</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-163.000000, -267.000000)">
+            <g id="dark/bell_active" transform="translate(164.000000, 268.000000)">
+                <path d="M11.6666667,4.4 C11.6666667,1.9699471 9.57732883,0 7,0 C4.42267117,0 2.33333333,1.9699471 2.33333333,4.4 C2.33333333,9.53333333 0,11 0,11 L14,11 C14,11 11.6666667,9.53333333 11.6666667,4.4" id="icon" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M8,14.0017719 C7.68977073,14.6185762 7.11826758,14.9982281 6.5,14.9982281 C5.88173242,14.9982281 5.31022927,14.6185762 5,14.0017719" id="icon" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                <circle id="-active" fill="#50E3C2" cx="12" cy="15" r="2"></circle>
+            </g>
+        </g>
+    </g>
+</svg>

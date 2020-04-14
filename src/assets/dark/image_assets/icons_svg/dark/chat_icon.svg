@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="23px" height="23px" viewBox="0 0 23 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>dark/chat_icon</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" fill-opacity="0.2" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Artboard" transform="translate(-163.000000, -909.000000)" fill="#00E7FF" stroke="#00E7FF" stroke-width="2">
+            <g id="dark/chat_icon" transform="translate(164.000000, 910.000000)">
+                <path d="M21.0000332,9.91666667 C21.0040148,11.4565124 20.644247,12.975532 19.95,14.35 C18.271119,17.7092157 14.8387254,19.8318802 11.0833333,19.8333333 C9.54348755,19.8373481 8.02446799,19.4775803 6.65,18.7833333 L0,21 L2.21666667,14.35 C1.52241966,12.975532 1.16265187,11.4565124 1.16666667,9.91666667 C1.16811982,6.16127457 3.29078425,2.72888102 6.65,1.05 C8.02446799,0.355752997 9.54348755,-0.00401479424 11.0833333,-3.32361192e-05 L11.6666667,-3.32361192e-05 C16.7017777,0.277782973 20.722217,4.29822234 21.0000332,9.33333333 L21.0000332,9.91666667 L21.0000332,9.91666667 Z" id="Path"></path>
+            </g>
+        </g>
+    </g>
+</svg>

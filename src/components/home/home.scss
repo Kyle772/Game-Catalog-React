@@ -1,0 +1,278 @@
+@import "../../variables";
+.light section.hero {
+    background: linear-gradient(180deg, $light-bg-gradient-from 100%, $light-bg-gradient-to 100%), url("../assets/image_assets/background_images/light/hero_image.jpg");
+    background-position: top center;
+    background-size: cover;
+    @media screen and (max-width: 500px) {
+        background: rgb(1, 3, 5);
+        background: linear-gradient(180deg, $light-bg-gradient-from 100%, $light-bg-gradient-to 100%), url("../assets/image_assets/background_images/light/hero_image.jpg") 65% 10%;
+        background-size: cover;
+        text-align: center;
+    }
+}
+
+section.hero {
+    margin-top: -90px;
+    padding-top: 90px;
+    background: linear-gradient(180deg, $bg-gradient-from 100%, $bg-gradient-to 100%), url("../assets/hero.png");
+    min-height: 55vh;
+    background-position: top center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    color: white;
+    @media screen and (max-width: 500px) {
+        background: rgb(1, 3, 5);
+        background: linear-gradient(180deg, $bg-gradient-from 100%, $bg-gradient-to 100%), url("../assets/hero.png") 65% 10%;
+        background-size: cover;
+        text-align: center;
+    }
+    h4.blue {
+        font-weight: 700;
+        text-transform: uppercase;
+        color: $blue;
+        margin-bottom: 0;
+    }
+    h2 {
+        font-size: 3rem;
+        margin-top: 0;
+        margin-bottom: 5px;
+        text-transform: uppercase;
+        font-weight: 500;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        @media screen and (max-width: 500px) {
+            align-items: center;
+        }
+    }
+    button {
+        align-self: flex-start;
+        @media screen and (max-width: 500px) {
+            align-self: unset;
+        }
+    }
+    .hero-content {
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+    span.title {
+        font-weight: 700;
+        font-size: 4rem;
+    }
+    .bonus {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        margin-left: 2rem;
+        span:first-of-type {
+            font-size: 2rem;
+        }
+        &:before {
+            position: absolute;
+            content: "+";
+            left: -1rem;
+            top: 50%;
+        }
+    }
+}
+
+.light section#games {
+    .search-bar {
+        background-color: $light-input-bg;
+        border: solid 1px $light-half-black;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+        &:before {
+            background-repeat: no-repeat;
+            background-position: center;
+            background-image: url("../assets/search.png");
+            filter: brightness(0);
+        }
+        input {
+            color: $light-half-black;
+        }
+    }
+    .container.load-more {
+        button {
+            border-color: $light-half-black;
+            color: $light-half-black;
+            &:after {
+                filter: brightness(.75);
+            }
+        }
+    }
+}
+
+section#games {
+    position: relative;
+    padding: 0 0;
+    .container {
+        justify-content: center;
+        align-items: center;
+        .col {
+            align-items: center;
+            img {
+                width: auto;
+                height: 30px;
+            }
+        }
+    }
+    h4.blue {
+        font-weight: 700;
+        text-transform: uppercase;
+        color: $blue;
+        margin-bottom: 0;
+    }
+    h3 {
+        margin-top: 0;
+        text-align: center;
+    }
+    .container.load-more {
+        button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-transform: uppercase;
+            margin: auto;
+            margin-top: 2rem;
+            margin-bottom: 3rem;
+            &:after {
+                display: block;
+                margin: auto;
+                margin-left: .5rem;
+                content: "";
+                width: 20px;
+                height: 10px;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-image: url('../assets/down-arrow.png');
+            }
+        }
+    }
+}
+
+.light section.winners {
+    color: $light-sf-black;
+    background: transparent;
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    .column .playercard .player-info p .game {
+        color: black;
+    }
+}
+
+section.winners {
+    background: linear-gradient(0deg, rgba(1, 3, 5, .7) 0%, rgba(0, 0, 0, 0.4) 100%), url("../assets/hero2.png");
+    background-size: cover;
+    padding: 5vh;
+    .container {
+        display: flex;
+        @media screen and (max-width: 500px) {
+            flex-direction: column;
+        }
+    }
+    .column {
+        width: 33%;
+        @media screen and (max-width: 500px) {
+            width: 100%;
+            text-align: center;
+        }
+        .playercard {
+            display: flex;
+            margin-bottom: .5rem;
+            @media screen and (max-width: 500px) {
+                display: none;
+            }
+            &:nth-of-type(1),
+            &:nth-of-type(2) {
+                @media screen and (max-width: 500px) {
+                    display: flex;
+                }
+            }
+            .player {
+                width: 60px;
+                height: 60px;
+                margin-right: 1rem;
+                background-color: black;
+                &.round {
+                    border-radius: 50%;
+                }
+            }
+            .player-info {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                @media screen and (max-width: 500px) {
+                    text-align: left;
+                }
+                p {
+                    margin-top: 0;
+                    margin-bottom: .5rem;
+                    .blue {
+                        color: $light-blue;
+                    }
+                    .game {
+                        color: $half-white;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.light section.top-games {
+    background: url("../assets/image_assets/background_images/light/background_image_2.png");
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    button {
+        border-color: $light-half-black;
+        color: $light-half-black;
+        &:after {
+            filter: brightness(.75);
+        }
+    }
+}
+
+section.top-games {
+    padding: 5vh 5vw;
+    background: #0A0D17;
+    background: linear-gradient(0deg, rgba(101, 42, 82, .7) 0%, rgba(101, 42, 82, 0) 60%);
+    .container.games {
+        display: flex;
+        flex-direction: row;
+        flex-basis: 25%;
+        .gamecard {
+            width: 25%;
+            position: relative;
+            border-radius: 3px;
+            @media screen and (max-width: 500px) {
+                width: 50%;
+            }
+        }
+    }
+    .container.load-more {
+        button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-transform: uppercase;
+            margin: auto;
+            margin-top: 2rem;
+            &:after {
+                display: block;
+                margin: auto;
+                margin-left: .5rem;
+                content: "";
+                width: 20px;
+                height: 10px;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-image: url('../assets/down-arrow.png');
+            }
+        }
+    }
+}

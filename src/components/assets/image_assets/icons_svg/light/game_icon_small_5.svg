@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="22px" height="22px" viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>light/game_icon_small_5</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-934.000000, -367.000000)" stroke="#0097FF">
+            <g id="light/game_icon_small_5" transform="translate(935.000000, 368.000000)">
+                <rect id="Rectangle" x="3.04347826" y="0" width="14.3478261" height="20" rx="3"></rect>
+                <line x1="5.68434189e-14" y1="0" x2="6.63794809" y2="6.63794809" id="Path"></line>
+                <line x1="13.4033407" y1="13.4033407" x2="20" y2="20" id="Path"></line>
+                <line x1="0" y1="20" x2="6.59374212" y2="13.4062579" id="Path"></line>
+                <line x1="13.4014955" y1="6.59850453" x2="20" y2="0" id="Path"></line>
+                <circle id="Oval" cx="10" cy="10" r="4.7826087"></circle>
+                <line x1="9.95652174" y1="6.52173913" x2="9.95652174" y2="13.1536232" id="Path" stroke-linecap="round" stroke-linejoin="round"></line>
+                <path d="M11.3695652,7.72753623 L9.25,7.72753623 C8.70371835,7.72753623 8.26086957,8.19990826 8.26086957,8.7826087 C8.26086957,9.36530913 8.70371835,9.83768116 9.25,9.83768116 L10.6630435,9.83768116 C11.2093251,9.83768117 11.6521739,10.3100532 11.6521739,10.8927536 C11.6521739,11.475454 11.2093251,11.9478261 10.6630435,11.9478261 L8.26086957,11.9478261" id="Path" stroke-linecap="round" stroke-linejoin="round"></path>
+            </g>
+        </g>
+    </g>
+</svg>

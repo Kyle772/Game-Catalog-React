@@ -1,0 +1,346 @@
+section#BettingHistory {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(9, 12, 23, 0.3)), color-stop(30%, #090c17)), url("../assets/hero2.png") no-repeat;
+  background: linear-gradient(180deg, rgba(9, 12, 23, 0.3) 0%, #090c17 30%), url("../assets/hero2.png") no-repeat;
+  background-size: 100%;
+  padding: 5vh;
+}
+
+@media screen and (max-width: 500px) {
+  section#BettingHistory {
+    background: none;
+  }
+}
+
+section#BettingHistory .modal {
+  padding: 0 30px;
+  padding-top: 15px;
+  margin-bottom: 1rem;
+}
+
+section#BettingHistory .inputs.modal {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section#BettingHistory .inputs.modal label {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  padding: 15px;
+  max-width: 25%;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+@media screen and (max-width: 500px) {
+  section#BettingHistory .inputs.modal {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: stretch;
+        -ms-flex-pack: stretch;
+            justify-content: stretch;
+    padding-bottom: 1rem;
+  }
+  section#BettingHistory .inputs.modal label {
+    max-width: 100%;
+    width: 100%;
+    padding: 0;
+  }
+}
+
+section#BettingHistory .inputs.modal button {
+  margin-top: 5px;
+  margin-left: auto;
+}
+
+section#BettingHistory .table.modal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: stretch;
+      -ms-flex-pack: stretch;
+          justify-content: stretch;
+  padding: 0;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-bottom: 8rem;
+  position: relative;
+}
+
+@media screen and (max-width: 500px) {
+  section#BettingHistory .table.modal {
+    max-width: 100%;
+  }
+}
+
+section#BettingHistory .table.modal #BettingHistoryTable_wrapper {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+section#BettingHistory .table.modal #BettingHistoryTable_wrapper table thead {
+  color: #5D616F;
+}
+
+section#BettingHistory .table.modal #BettingHistoryTable_wrapper table thead th {
+  text-align: left;
+  padding-left: 8px;
+}
+
+section#BettingHistory .table.modal #BettingHistoryTable_wrapper table thead th:first-child {
+  padding-left: 45px;
+}
+
+section#BettingHistory .table.modal #BettingHistoryTable_wrapper table thead th:last-child {
+  padding-right: 45px;
+}
+
+section#BettingHistory .table.modal #BettingHistoryTable_wrapper table tbody {
+  color: white;
+}
+
+section#BettingHistory .table.modal #BettingHistoryTable_wrapper table tbody tr {
+  width: 100%;
+}
+
+section#BettingHistory .table.modal #BettingHistoryTable_wrapper table tbody tr td {
+  height: 3rem;
+}
+
+section#BettingHistory .table.modal #BettingHistoryTable_wrapper table tbody tr:nth-child(even) {
+  background-color: transparent;
+}
+
+section#BettingHistory .table.modal #BettingHistoryTable_wrapper table tbody tr:nth-child(odd) {
+  background-color: #2B2F42;
+}
+
+section#BettingHistory .table.modal #BettingHistoryTable_wrapper table tbody td.status.green,
+section#BettingHistory .table.modal #BettingHistoryTable_wrapper table tbody td.status.red {
+  color: #4DFF5B;
+}
+
+section#BettingHistory .table.modal #BettingHistoryTable_wrapper table tbody td.status.green:before,
+section#BettingHistory .table.modal #BettingHistoryTable_wrapper table tbody td.status.red:before {
+  content: "";
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background-color: #4DFF5B;
+  border-radius: 50%;
+  margin-right: .25rem;
+}
+
+section#BettingHistory .table.modal #BettingHistoryTable_wrapper table tbody td.status.red {
+  color: #FF5959;
+}
+
+section#BettingHistory .table.modal #BettingHistoryTable_wrapper table tbody td.status.red:before {
+  background-color: #FF5959;
+}
+
+section#BettingHistory .table.modal #BettingHistoryTable_wrapper table tbody td:first-child {
+  padding-left: 45px;
+}
+
+section#BettingHistory .table.modal #BettingHistoryTable_wrapper table tbody td:last-child {
+  padding-right: 45px;
+}
+
+section#BettingHistory .table.modal #BettingHistoryTable_wrapper table tbody .id {
+  color: #5D616F;
+}
+
+section#BettingHistory .table.modal #BettingHistoryTable_wrapper #BettingHistoryTable_length,
+section#BettingHistory .table.modal #BettingHistoryTable_wrapper #BettingHistoryTable_filter,
+section#BettingHistory .table.modal #BettingHistoryTable_wrapper #BettingHistoryTable_info {
+  display: none;
+}
+
+section#BettingHistory .table.modal #BettingHistoryTable_wrapper #BettingHistoryTable_paginate {
+  margin-bottom: -5rem;
+  margin-top: 2rem;
+}
+
+section#BettingHistory .table.modal #BettingHistoryTable_wrapper .paginate_button {
+  background-color: #1B1E2B;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  margin: 5px;
+  -webkit-transition: background-color, color 250ms ease-out;
+  transition: background-color, color 250ms ease-out;
+  background: unset;
+  background-color: #1B1E2B;
+  color: #5D616F !important;
+}
+
+section#BettingHistory .table.modal #BettingHistoryTable_wrapper .paginate_button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white !important;
+}
+
+section.top-games {
+  padding: 5vh 5vw;
+  background: #0A0D17;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(101, 42, 82, 0.7)), color-stop(60%, rgba(101, 42, 82, 0))), url("../assets/hero2.png") no-repeat;
+  background: linear-gradient(0deg, rgba(101, 42, 82, 0.7) 0%, rgba(101, 42, 82, 0) 60%), url("../assets/hero2.png") no-repeat;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+section.top-games .container.games {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+}
+
+section.top-games .container.games .gamecard {
+  width: 25%;
+  position: relative;
+  border-radius: 3px;
+}
+
+@media screen and (max-width: 500px) {
+  section.top-games .container.games .gamecard {
+    width: 50%;
+  }
+}
+
+section.top-games .container.games .gamecard .controls {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: absolute;
+  top: 0;
+  padding: .5rem;
+}
+
+section.top-games .container.games .gamecard .controls .new {
+  text-transform: uppercase;
+  padding: .25rem .5rem;
+  border-radius: 1rem;
+  background-color: #FF996C;
+}
+
+section.top-games .container.games .gamecard p {
+  text-align: center;
+}
+
+section.top-games .container.load-more button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: uppercase;
+  margin: auto;
+  margin-top: 2rem;
+}
+
+section.top-games .container.load-more button:after {
+  display: block;
+  margin: auto;
+  margin-left: .5rem;
+  content: "";
+  width: 20px;
+  height: 10px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../assets/down-arrow.png");
+}
+
+.light section#BettingHistory {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 300px, white 500px), url("../light-theme/assets/hero1.png") no-repeat;
+  background-size: 100%;
+  padding: 5vh;
+  color: white;
+}
+
+@media screen and (max-width: 500px) {
+  .light section#BettingHistory {
+    padding: 5vw;
+  }
+}
+
+.light section#BettingHistory .container > .breadcrumb > a {
+  color: white;
+}
+
+.light section#BettingHistory .table.modal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: stretch;
+      -ms-flex-pack: stretch;
+          justify-content: stretch;
+  padding: 0;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-bottom: 8rem;
+  position: relative;
+}
+
+@media screen and (max-width: 500px) {
+  .light section#BettingHistory .table.modal {
+    max-width: 100%;
+  }
+}
+
+.light section#BettingHistory .table.modal #BettingHistoryTable_wrapper {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.light section#BettingHistory .table.modal #BettingHistoryTable_wrapper table thead {
+  color: rgba(0, 0, 0, 0.75);
+}
+
+.light section#BettingHistory .table.modal #BettingHistoryTable_wrapper table tbody {
+  color: rgba(0, 0, 0, 0.75);
+}
+
+.light section#BettingHistory .table.modal #BettingHistoryTable_wrapper table tbody tr:nth-child(even) {
+  background-color: transparent;
+}
+
+.light section#BettingHistory .table.modal #BettingHistoryTable_wrapper table tbody tr:nth-child(odd) {
+  background-color: white;
+}
+
+.light section#BettingHistory .table.modal #BettingHistoryTable_wrapper table tbody .id {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.light section#BettingHistory .table.modal #BettingHistoryTable_wrapper .paginate_button {
+  background-color: white;
+  background: unset;
+  color: rgba(0, 0, 0, 0.5) !important;
+}
+
+.light section#BettingHistory .table.modal #BettingHistoryTable_wrapper .paginate_button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: black !important;
+}
+
+.light section#BettingHistory .inputs.modal label {
+  color: rgba(0, 0, 0, 0.5);
+}
+/*# sourceMappingURL=bettinghistory.css.map */

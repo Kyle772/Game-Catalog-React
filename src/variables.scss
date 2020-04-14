@@ -1,0 +1,42 @@
+// Dark Mode Variables
+$blue-gradient: linear-gradient(90deg, rgba(33, 153, 253, 1) 0%, rgba(33, 253, 225, 1) 100%);
+$blue-gradient-vert: linear-gradient(180deg, rgba(33, 153, 253, 1) 0%, rgba(33, 253, 225, 1) 100%);
+$light-blue: rgba(33, 253, 225, 1);
+$blue: rgba(33, 153, 253, 1);
+$border-radius: 3px;
+// Modal
+$modal-back: #1B1E2B;
+$modal-cover: rgba(9, 12, 23, .95);
+$modal-inner-border: rgba(238, 238, 238, .05);
+// Header 
+$header-bg: rgba(15, 17, 25, .85);
+// Body
+$body-background-color: rgba(10, 13, 23, 1);
+$bg-gradient-from: rgba(9, 12, 23, 0.3);
+$bg-gradient-to: rgba(9, 12, 23, 1);
+// Text
+$half-white: rgba(255, 255, 255, .5);
+$ten-white: rgba(255, 255, 255, .1);
+$sf-white: rgba(255, 255, 255, .75);
+// Inputs
+$input-bg: #2B2F42;
+//
+//
+// Light mode variables
+// Modal
+$light-modal-back: white;
+$light-modal-cover: rgba(9, 12, 23, .95);
+$light-modal-inner-border: rgba(0, 0, 0, .05);
+// Header 
+$light-header-bg: rgba(235, 233, 230, .85);
+// Body
+$light-body-background-color: white;
+$light-bg-gradient-from: rgba(255, 255, 255, 0);
+$light-bg-gradient-to: rgba(255, 255, 255, 1);
+// Text
+$light-half-black: rgba(0, 0, 0, .5);
+$light-ten-black: rgba(0, 0, 0, .1);
+$light-sf-black: rgba(0, 0, 0, .75);
+// Inputs
+$light-input-bg: white;
+// Light mode variables

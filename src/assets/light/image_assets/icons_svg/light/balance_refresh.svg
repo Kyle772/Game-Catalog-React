@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="13px" height="10px" viewBox="0 0 13 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>light/balance_refresh</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Artboard" transform="translate(-848.000000, -271.000000)" stroke="#0097FF">
+            <g id="light/balance_refresh" transform="translate(849.000000, 272.000000)">
+                <polyline id="Path" points="10.6031746 0.571428571 10.6031746 3.42857143 7.74603175 3.42857143"></polyline>
+                <polyline id="Path" points="0.317460317 7.42857143 0.317460317 4.57142857 3.17460317 4.57142857"></polyline>
+                <path d="M1.99720058,2.66634133 C2.45239507,1.37127504 3.53570816,0.40188594 4.86657393,0.0987186615 C6.19743971,-0.204448618 7.5897329,0.20100471 8.55434343,1.17264363 L10.6031746,3.11089422 M0.888888889,4.88910578 L2.93772006,6.82735637 C3.90233059,7.79899529 5.29462378,8.20444862 6.62548956,7.90128134 C7.95635534,7.59811406 9.03966843,6.62872496 9.49486291,5.33365867" id="Shape" opacity="0.5"></path>
+            </g>
+        </g>
+    </g>
+</svg>

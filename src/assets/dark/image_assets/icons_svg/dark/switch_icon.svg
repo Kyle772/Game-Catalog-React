@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>dark/switch_icon</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Artboard" transform="translate(-304.000000, -152.000000)" stroke="#FFFFFF" stroke-width="2">
+            <path d="M321,161.720688 C320.610153,165.939229 317.005337,169.126268 312.77082,168.996155 C308.536303,168.866042 305.133958,165.463697 305.003845,161.22918 C304.873732,156.994663 308.060771,153.389847 312.279312,153 C310.444637,155.482102 310.701977,158.932966 312.884506,161.115494 C315.067034,163.298023 318.517898,163.555363 321,161.720688 L321,161.720688 Z" id="dark/switch_icon"></path>
+        </g>
+    </g>
+</svg>
