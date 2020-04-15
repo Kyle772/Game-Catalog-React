@@ -267,7 +267,7 @@ section.top-games .container.load-more button:after {
 }
 
 .light section#BettingHistory {
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 300px, white 500px), url("../light-theme/assets/hero1.png") no-repeat;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 300px, white 500px), url("/assets/light/hero1.png") no-repeat;
   background-size: 100%;
   padding: 5vh;
   color: white;

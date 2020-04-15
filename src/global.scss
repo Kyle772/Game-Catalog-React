@@ -1194,6 +1194,10 @@ section .modal {
     }
 }
 
+input {
+    box-sizing: border-box;
+}
+
 .inputs label {
     display: flex;
     flex-direction: column;

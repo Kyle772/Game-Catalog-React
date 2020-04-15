@@ -13,7 +13,7 @@ import App from './App';
 
 render(
     <React.StrictMode>
-      <div class="modalCover active"></div>
+      <div className="modalCover active"></div>
       <PinPad loggedin={true}/>
       <SpinWheel/>
       <Header loggedin={true}/>

@@ -1698,6 +1698,11 @@ section .modal label button:hover {
   color: #2199fd;
 }
 
+input {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 .inputs label {
   display: -webkit-box;
   display: -ms-flexbox;
