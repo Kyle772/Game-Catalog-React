@@ -1,5 +1,5 @@
 import React from 'react';
-import Favorites from '../components/home/home';
+import Favorites from '../components/favorites/favorites';
 
 const FavoritePage = () => {
     return (
