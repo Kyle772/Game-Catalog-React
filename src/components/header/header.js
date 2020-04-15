@@ -16,40 +16,52 @@ export default class Header extends Component {
         elModal2.classList.toggle('active');
     }
 
+    activateTab(event) {
+        var button = document.querySelector('.langselect');
+        event.target.classList.toggle("clicked");
+        document.querySelector("#" + button.getAttribute('target')).classList.toggle('active');
+    }
+
+    changeLang(event) {
+        var imagesrc = event.target.firstElementChild.getAttribute("src");
+        // var langtype = event.target.firstElementChild.getAttribute("lang");
+        document.querySelector('.langselect .selected').setAttribute("src", imagesrc);
+    }
+
     render() {
         return (
             <header>
-                <div class="container">
-                    <img class="logo" src={logo} />
-                    <button class="row"><a href="./homepage.html">
-                    <img src={spade} />
-                    <span>Casino</span></a>
-                </button>
-                    <button class="row mar"><a href="./allgames.html">
-                    <img src={live} />
-                    <span>All Games</span></a>
-                </button>
-                    <button onClick={this.activateModal} class="row border modalActivate">
+                <div className="container">
+                    <a className="logo" href="/"><img src={logo} /></a>
+                    <button className="row"><a href="/">
+                        <img src={spade} />
+                        <span>Casino</span></a>
+                    </button>
+                    <button className="row mar"><a href="/allgames">
+                        <img src={live} />
+                        <span>All Games</span></a>
+                    </button>
+                    <button onClick={this.activateModal} className="row border modalActivate">
                     <span>#2218</span>
                 </button>
-                    <button class="round moon">
+                    <button className="round moon">
                     <a href="../homepage-loggedin.html"><img src={moon} /></a>
                 </button>
-                    <button class="profile large langselect" target="LangDropdown">
-                    <img class="selected" src={USAFlag} />
-                    <img class="arrow" src={DropArrow} />
+                    <button onClick={this.activateTab} className="profile large langselect" target="LangDropdown">
+                    <img className="selected" src={USAFlag} />
+                    <img className="arrow" src={DropArrow} />
                 </button>
                     <ul id="LangDropdown">
-                        <button class="lang-item">
-                        <img src={USAFlag} /> 
-                        <span>English (US)</span>
-                    </button>
-                        <button class="lang-item">
-                        <img src={SpanFlag} /> 
-                        <span>Spanish (MEX)</span>
-                    </button>
+                        <button onClick={this.changeLang} className="lang-item">
+                            <img src={USAFlag} /> 
+                            <span>English (US)</span>
+                        </button>
+                        <button onClick={this.changeLang} className="lang-item">
+                            <img src={SpanFlag} /> 
+                            <span>Spanish (MEX)</span>
+                        </button>
                     </ul>
-                    <button class="mobileNav"><img src={Hamburger}/></button>
+                    <button className="mobileNav"><img src={Hamburger}/></button>
                 </div>
             </header>
         )

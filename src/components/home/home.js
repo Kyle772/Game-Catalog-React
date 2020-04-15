@@ -3,7 +3,7 @@ import './home.scss';
 
 function Home() {
     return (
-        <section></section>
+        <section>This is a page</section>
     );
 }
 

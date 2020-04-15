@@ -38,7 +38,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: 95vh;
+    min-height: 100vh;
     background-color: $body-background-color;
     padding: 0;
     margin: 0;
@@ -89,7 +89,7 @@ button {
     }
 }
 
-#Chatwindow {
+#ChatWindow {
     width: 0;
     position: fixed;
     display: flex;
@@ -682,9 +682,9 @@ header {
         background-color: $modal-back;
         display: flex;
         flex-direction: column;
+        width: 150px;
         &.active {
             visibility: visible;
-            width: 150px;
             padding: 0px;
             z-index: 300;
         }
@@ -1434,28 +1434,35 @@ footer {
     text-align: center;
     color: $half-white;
     background-color: $modal-cover;
-    padding: 1vh 5vw;
+    padding: 1vh 0;
+    margin-top: auto;
     width: 100%;
     box-sizing: border-box;
-}
-
-.colorbar {
-    height: 5px;
-    width: 100%;
-    background-color: #00E7FF;
-    &:before {
-        display: inline-block;
-        content: "";
+    position: relative;
+    .colorbar {
+        margin-top: -1vh;
+        position: absolute;
         height: 5px;
-        width: 33%;
-        background-color: #FF5757;
-    }
-    &:after {
-        display: inline-block;
-        content: "";
-        height: 5px;
-        width: 33%;
-        background-color: #FF9F63;
+        width: 100%;
+        background-color: #00E7FF;
+        &:before {
+            position: absolute;
+            left: 0;
+            display: inline-flex;
+            content: "";
+            height: 5px;
+            width: 33%;
+            background-color: #FF5757;
+        }
+        &:after {
+            position: absolute;
+            right: 0;
+            display: inline-flex;
+            content: "";
+            height: 5px;
+            width: 33%;
+            background-color: #FF9F63;
+        }
     }
 }
 

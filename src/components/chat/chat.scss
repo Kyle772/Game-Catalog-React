@@ -1,0 +1,178 @@
+@import '../../variables.scss';
+#Chatwindow {
+    width: 0;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    height: 0;
+    min-height: 0;
+    overflow: hidden;
+    transition: all 250ms ease-in-out;
+    bottom: 15px;
+    right: 15px;
+    opacity: 0;
+    z-index: 105;
+    &.active {
+        background-color: $modal-back;
+        color: white;
+        max-height: 30vh;
+        min-height: 30vh;
+        width: 350px;
+        opacity: 1;
+        z-index: 101;
+        border-radius: $border-radius;
+        @media screen and (max-width: 500px) {
+            width: 100%;
+            height: 100%;
+            min-height: 100%;
+            max-height: 100%;
+            bottom: 0;
+            right: 0;
+        }
+    }
+    &.collapse {
+        min-height: 40px;
+        bottom: 0;
+        button.collapse {
+            transform: rotate(180deg);
+        }
+        .chat-messages {
+            max-height: 0;
+            overflow: hidden;
+        }
+        .bottom {
+            max-height: 0;
+            overflow: hidden;
+        }
+    }
+    .top {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        height: 45px;
+        min-height: 45px;
+        border-bottom: 1px solid $ten-white;
+        padding: 0 .5rem;
+        p {
+            margin: 0;
+            margin-right: auto;
+            margin-left: .5rem;
+        }
+        button {
+            border: none;
+            border-radius: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: .5rem .5rem;
+            transition: filter ease-in-out 150ms;
+            &:hover {
+                filter: brightness(.5);
+            }
+            &.collapse {
+                @media screen and (max-width: 500px) {
+                    display: none;
+                }
+            }
+            img {
+                width: 15px;
+                max-height: 40px;
+                height: auto;
+            }
+        }
+    }
+    .chat-messages {
+        flex-grow: 1;
+        padding: 1rem .5rem;
+        overflow-y: auto;
+        .chat-message {
+            display: flex;
+            img {
+                height: 25px;
+                width: 25px;
+                margin: 5px;
+            }
+            p {
+                padding: .75rem;
+                box-sizing: border-box;
+                margin-top: 0;
+                flex-grow: 1;
+            }
+            &.to-me p {
+                background-color: $ten-white;
+                border-radius: 15px;
+                border-top-left-radius: 0;
+                margin-right: 50px;
+            }
+            &.from-me {
+                flex-direction: row-reverse;
+                p {
+                    background-color: $modal-cover;
+                    border-radius: 15px;
+                    margin-left: 50px;
+                    border-top-right-radius: 0;
+                }
+            }
+        }
+    }
+    .bottom {
+        height: 45px;
+        min-height: 45px;
+        background-color: $modal-cover;
+        display: flex;
+        flex-direction: row;
+        border-bottom-left-radius: $border-radius;
+        border-bottom-right-radius: $border-radius;
+        input {
+            color: $sf-white;
+            flex-grow: 1;
+            width: 100%;
+            background-color: transparent;
+            border: none;
+            padding: .5rem;
+        }
+        button {
+            border-radius: 0;
+            border: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            &:hover {
+                filter: brightness(2.0);
+            }
+        }
+    }
+}
+
+.light section.floating.bottom .chatActivate {
+    background-color: white;
+    transition: box-shadow 250ms ease-in-out;
+    &:hover {
+        box-shadow: 3px 3px 10px rgba(0, 0, 0, .4);
+    }
+}
+
+.light #ChatWindow {
+    background-color: $light-body-background-color;
+    color: black;
+    .chat-messages {
+        .chat-message.to-me p {
+            background-color: $light-ten-black;
+        }
+        .chat-message.from-me p {
+            background-color: rgba(0, 0, 0, 0.35);
+        }
+    }
+    .bottom {
+        input {
+            background-color: white;
+            color: black;
+        }
+        button {
+            background-color: white;
+            &:hover img {
+                filter: brightness(0);
+            }
+        }
+    }
+}

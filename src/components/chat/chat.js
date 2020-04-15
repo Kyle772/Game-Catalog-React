@@ -3,52 +3,66 @@ import Collapse from '../assets/collapsechat.png';
 import Close from '../assets/close.png';
 import DefProfilePhoto from '../assets/defaultprofile.png';
 import Send from '../assets/send.png';
+import './chat.scss';
 
 export default class Chat extends Component {
+    elChatButtonCollapse() {
+        var elChat = document.querySelector('#ChatWindow');
+        elChat.classList.toggle('collapse');
+        elChat.focus();
+    }
+    elChatButtonDeactivate() {
+        var elChat = document.querySelector('#ChatWindow');
+        var elChatButtonActivate = document.querySelector('.chatActivate');
+        elChat.classList.toggle('active');
+        elChat.classList.remove('collapse');
+        elChatButtonActivate.classList.toggle('hide');
+    }
+
     render() {
         return (
             <div id="ChatWindow">
-                <div class="top">
-                    <button class="collapse chatCollapse"><img src={Collapse} /></button>
-                    <button class="close chatDeactivate"><img src={Close} /></button>
+                <div className="top">
+                    <button onClick={this.elChatButtonCollapse} className="collapse chatCollapse"><img src={Collapse} /></button>
+                    <button onClick={this.elChatButtonDeactivate} className="close chatDeactivate"><img src={Close} /></button>
                 </div>
-                <div class="chat-messages">
-                    <div class="chat-message to-me">
-                        <img class="profile-photo" src={DefProfilePhoto}/>
-                        <p class="chat-content">This is a test message</p>
+                <div className="chat-messages">
+                    <div className="chat-message to-me">
+                        <img className="profile-photo" src={DefProfilePhoto}/>
+                        <p className="chat-content">This is a test message</p>
                     </div>
-                    <div class="chat-message from-me">
-                        <img class="profile-photo" src={DefProfilePhoto}/>
-                        <p class="chat-content">This is a test message</p>
+                    <div className="chat-message from-me">
+                        <img className="profile-photo" src={DefProfilePhoto}/>
+                        <p className="chat-content">This is a test message</p>
                     </div>
-                    <div class="chat-message from-me">
-                        <img class="profile-photo" src={DefProfilePhoto}/>
-                        <p class="chat-content">This is a test message</p>
+                    <div className="chat-message from-me">
+                        <img className="profile-photo" src={DefProfilePhoto}/>
+                        <p className="chat-content">This is a test message</p>
                     </div>
-                    <div class="chat-message from-me">
-                        <img class="profile-photo" src={DefProfilePhoto}/>
-                        <p class="chat-content">This is a test message</p>
+                    <div className="chat-message from-me">
+                        <img className="profile-photo" src={DefProfilePhoto}/>
+                        <p className="chat-content">This is a test message</p>
                     </div>
-                    <div class="chat-message from-me">
-                        <img class="profile-photo" src={DefProfilePhoto}/>
-                        <p class="chat-content">This is a test message</p>
+                    <div className="chat-message from-me">
+                        <img className="profile-photo" src={DefProfilePhoto}/>
+                        <p className="chat-content">This is a test message</p>
                     </div>
-                    <div class="chat-message from-me">
-                        <img class="profile-photo" src={DefProfilePhoto}/>
-                        <p class="chat-content">This is a test message</p>
+                    <div className="chat-message from-me">
+                        <img className="profile-photo" src={DefProfilePhoto}/>
+                        <p className="chat-content">This is a test message</p>
                     </div>
-                    <div class="chat-message from-me">
-                        <img class="profile-photo" src={DefProfilePhoto}/>
-                        <p class="chat-content">This is a test message</p>
+                    <div className="chat-message from-me">
+                        <img className="profile-photo" src={DefProfilePhoto}/>
+                        <p className="chat-content">This is a test message</p>
                     </div>
-                    <div class="chat-message from-me">
-                        <img class="profile-photo" src={DefProfilePhoto}/>
-                        <p class="chat-content">This is a test message</p>
+                    <div className="chat-message from-me">
+                        <img className="profile-photo" src={DefProfilePhoto}/>
+                        <p className="chat-content">This is a test message</p>
                     </div>
                 </div>
-                <div class="bottom">
+                <div className="bottom">
                     <input placeholder="Type your message here..." type="text"></input>
-                    <button class="send-chat-message"><img src={Send}/></button>
+                    <button className="send-chat-message"><img src={Send}/></button>
                 </div>
             </div>
         )

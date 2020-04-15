@@ -44,7 +44,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  min-height: 95vh;
+  min-height: 100vh;
   background-color: #0a0d17;
   padding: 0;
   margin: 0;
@@ -108,7 +108,7 @@ button.wheelspin:hover {
           animation: spinflash 0.2s steps(3) infinite;
 }
 
-#Chatwindow {
+#ChatWindow {
   width: 0;
   position: fixed;
   display: -webkit-box;
@@ -129,7 +129,7 @@ button.wheelspin:hover {
   z-index: 105;
 }
 
-#Chatwindow.active {
+#ChatWindow.active {
   background-color: #1B1E2B;
   color: white;
   max-height: 30vh;
@@ -141,7 +141,7 @@ button.wheelspin:hover {
 }
 
 @media screen and (max-width: 500px) {
-  #Chatwindow.active {
+  #ChatWindow.active {
     width: 100%;
     height: 100%;
     min-height: 100%;
@@ -151,27 +151,27 @@ button.wheelspin:hover {
   }
 }
 
-#Chatwindow.collapse {
+#ChatWindow.collapse {
   min-height: 40px;
   bottom: 0;
 }
 
-#Chatwindow.collapse button.collapse {
+#ChatWindow.collapse button.collapse {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
 }
 
-#Chatwindow.collapse .chat-messages {
+#ChatWindow.collapse .chat-messages {
   max-height: 0;
   overflow: hidden;
 }
 
-#Chatwindow.collapse .bottom {
+#ChatWindow.collapse .bottom {
   max-height: 0;
   overflow: hidden;
 }
 
-#Chatwindow .top {
+#ChatWindow .top {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -187,13 +187,13 @@ button.wheelspin:hover {
   padding: 0 .5rem;
 }
 
-#Chatwindow .top p {
+#ChatWindow .top p {
   margin: 0;
   margin-right: auto;
   margin-left: .5rem;
 }
 
-#Chatwindow .top button {
+#ChatWindow .top button {
   border: none;
   border-radius: 0;
   display: -webkit-box;
@@ -212,24 +212,24 @@ button.wheelspin:hover {
   transition: filter ease-in-out 150ms, -webkit-filter ease-in-out 150ms;
 }
 
-#Chatwindow .top button:hover {
+#ChatWindow .top button:hover {
   -webkit-filter: brightness(0.5);
           filter: brightness(0.5);
 }
 
 @media screen and (max-width: 500px) {
-  #Chatwindow .top button.collapse {
+  #ChatWindow .top button.collapse {
     display: none;
   }
 }
 
-#Chatwindow .top button img {
+#ChatWindow .top button img {
   width: 15px;
   max-height: 40px;
   height: auto;
 }
 
-#Chatwindow .chat-messages {
+#ChatWindow .chat-messages {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
@@ -237,19 +237,19 @@ button.wheelspin:hover {
   overflow-y: auto;
 }
 
-#Chatwindow .chat-messages .chat-message {
+#ChatWindow .chat-messages .chat-message {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-#Chatwindow .chat-messages .chat-message img {
+#ChatWindow .chat-messages .chat-message img {
   height: 25px;
   width: 25px;
   margin: 5px;
 }
 
-#Chatwindow .chat-messages .chat-message p {
+#ChatWindow .chat-messages .chat-message p {
   padding: .75rem;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -259,28 +259,28 @@ button.wheelspin:hover {
           flex-grow: 1;
 }
 
-#Chatwindow .chat-messages .chat-message.to-me p {
+#ChatWindow .chat-messages .chat-message.to-me p {
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 15px;
   border-top-left-radius: 0;
   margin-right: 50px;
 }
 
-#Chatwindow .chat-messages .chat-message.from-me {
+#ChatWindow .chat-messages .chat-message.from-me {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
 }
 
-#Chatwindow .chat-messages .chat-message.from-me p {
+#ChatWindow .chat-messages .chat-message.from-me p {
   background-color: rgba(9, 12, 23, 0.95);
   border-radius: 15px;
   margin-left: 50px;
   border-top-right-radius: 0;
 }
 
-#Chatwindow .bottom {
+#ChatWindow .bottom {
   height: 45px;
   min-height: 45px;
   background-color: rgba(9, 12, 23, 0.95);
@@ -295,7 +295,7 @@ button.wheelspin:hover {
   border-bottom-right-radius: 3px;
 }
 
-#Chatwindow .bottom input {
+#ChatWindow .bottom input {
   color: rgba(255, 255, 255, 0.75);
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
@@ -306,7 +306,7 @@ button.wheelspin:hover {
   padding: .5rem;
 }
 
-#Chatwindow .bottom button {
+#ChatWindow .bottom button {
   border-radius: 0;
   border: none;
   display: -webkit-box;
@@ -320,7 +320,7 @@ button.wheelspin:hover {
           justify-content: center;
 }
 
-#Chatwindow .bottom button:hover {
+#ChatWindow .bottom button:hover {
   -webkit-filter: brightness(2);
           filter: brightness(2);
 }
@@ -993,11 +993,11 @@ header ul#LangDropdown {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  width: 150px;
 }
 
 header ul#LangDropdown.active {
   visibility: visible;
-  width: 150px;
   padding: 0px;
   z-index: 300;
 }
@@ -2126,28 +2126,40 @@ footer {
   text-align: center;
   color: rgba(255, 255, 255, 0.5);
   background-color: rgba(9, 12, 23, 0.95);
-  padding: 1vh 5vw;
+  padding: 1vh 0;
+  margin-top: auto;
   width: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  position: relative;
 }
 
-.colorbar {
+footer .colorbar {
+  margin-top: -1vh;
+  position: absolute;
   height: 5px;
   width: 100%;
   background-color: #00E7FF;
 }
 
-.colorbar:before {
-  display: inline-block;
+footer .colorbar:before {
+  position: absolute;
+  left: 0;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   content: "";
   height: 5px;
   width: 33%;
   background-color: #FF5757;
 }
 
-.colorbar:after {
-  display: inline-block;
+footer .colorbar:after {
+  position: absolute;
+  right: 0;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   content: "";
   height: 5px;
   width: 33%;

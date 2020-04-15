@@ -10,43 +10,49 @@ import Profile from '../assets/profile.png';
 import LogoIcon from '../assets/logoicon.png';
 
 export default class SubHeader extends Component {
+    activateTab(event) {
+        var button = document.querySelector('.profile.rounded');
+        event.target.classList.toggle("clicked");
+        document.querySelector("#" + button.getAttribute('target')).classList.toggle('active');
+    }
+
     render() {
         return (
-            <header class="secondary">
-        <div class="container">
-            <button class="row">
+            <header className="secondary">
+        <div className="container">
+            <button className="row">
               <img src={Diamond} />
               <span>Video Slots</span>
           </button>
-            <button class="row">
+            <button className="row">
               <img src={Dice} />
               <span>Table Games</span>
           </button>
-            <button class="row">
+            <button className="row">
               <img src={Slots} />
               <span>Classic Slots</span>
           </button>
-            <button class="row">
+            <button className="row">
               <img src={Poker} />
               <span>Video Poker</span>
           </button>
-            <button class="row">
+            <button className="row">
               <img src={Scratch} />
               <span>Scratch Cards</span>
           </button>
-            <button class="row mar">
+            <button className="row mar">
               <img src={Jackpot} />
               <span>Jackpot Games</span>
           </button>
-            <button class="balance rounded"><span class="text">Balance:</span> <span class="currency">$78.55</span><span class="refresh"></span></button>
-            <button class="notification rounded"> </button>
-            <button class="profile rounded" target="account-dropdown">lawrence.do</button>
+            <button className="balance rounded"><span className="text">Balance:</span> <span className="currency">$78.55</span><span className="refresh"></span></button>
+            <button className="notification rounded"> </button>
+            <button onClick={this.activateTab} className="profile rounded" target="account-dropdown">lawrence.do</button>
             <div id="account-dropdown">
                 <button><a href="./favorited.html"><img src={Favorite}/>Favorites</a></button>
                 <button><a href="./account.html"><img src={Profile}/>Account</a></button>
                 <button><a href="./bettinghistory.html"><img src={LogoIcon}/>History</a></button>
             </div>
-            <button class="logout rounded">Logout</button>
+            <button className="logout rounded">Logout</button>
         </div>
     </header>
         )
