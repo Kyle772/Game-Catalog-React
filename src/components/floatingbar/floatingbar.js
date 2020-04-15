@@ -12,10 +12,17 @@ export default class FloatingBar extends Component {
         elChat.focus();
     }
 
+    elWheelButtonActivate() {
+        var wheel1 = document.querySelector('.modalCover');
+        var wheel2 = document.querySelector('#SpinWheel');
+        wheel1.classList.toggle('active');
+        wheel2.classList.toggle('active');
+    }
+
     render() {
         return (
             <section className="floating bottom">
-                <button className="wheelspin wheelActivate"></button>
+                <button onClick={this.elWheelButtonActivate} className="wheelspin wheelActivate"></button>
                 <button onClick={this.elChatButtonActivate} className="chat chatActivate"><img src={ChatIcon}/></button>
             </section>
         )

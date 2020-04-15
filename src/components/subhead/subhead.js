@@ -48,9 +48,9 @@ export default class SubHeader extends Component {
             <button className="notification rounded"> </button>
             <button onClick={this.activateTab} className="profile rounded" target="account-dropdown">lawrence.do</button>
             <div id="account-dropdown">
-                <button><a href="./favorited.html"><img src={Favorite}/>Favorites</a></button>
-                <button><a href="./account.html"><img src={Profile}/>Account</a></button>
-                <button><a href="./bettinghistory.html"><img src={LogoIcon}/>History</a></button>
+                <button><a href="/favorites"><img src={Favorite}/>Favorites</a></button>
+                <button><a href="/account"><img src={Profile}/>Account</a></button>
+                <button><a href="/history"><img src={LogoIcon}/>History</a></button>
             </div>
             <button className="logout rounded">Logout</button>
         </div>
