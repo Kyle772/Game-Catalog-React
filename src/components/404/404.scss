@@ -1,0 +1,11 @@
+.missing.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+    h1,
+    h2 {
+        color: white;
+    }
+}
