@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { render } from 'react-snapshot';
 import './global.scss';
-import Home from './components/home/home';
 import * as serviceWorker from './serviceWorker';
 import Header from './components/header/header';
 import SubHeader from './components/subhead/subhead';
@@ -15,13 +14,13 @@ import App from './App';
 render(
     <React.StrictMode>
       <div class="modalCover active"></div>
-      <PinPad/>
+      <PinPad loggedin={true}/>
       <SpinWheel/>
-      <Header/>
-      <SubHeader/>
+      <Header loggedin={true}/>
+      <SubHeader loggedin={true}/>
       <App/>
-      <FloatingBar/>
-      <Chat/>
+      <FloatingBar loggedin={true}/>
+      <Chat loggedin={true}/>
       <Footer/>
   </React.StrictMode>,
     document.getElementById('root')

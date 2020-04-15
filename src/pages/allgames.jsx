@@ -1,5 +1,5 @@
 import React from 'react';
-import AllGames from '../components/home/home';
+import AllGames from '../components/allgames/allgames';
 
 const AllGamesPage = () => {
     return (
