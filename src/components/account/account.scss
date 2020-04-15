@@ -1,6 +1,6 @@
-@import "../variables";
+@import "../../variables.scss";
 .light section#AccountSettings {
-    background: linear-gradient(180deg, $light-bg-gradient-from 4%, $light-bg-gradient-to 70%), url("../light-theme/assets/hero1.png") no-repeat;
+    background: linear-gradient(180deg, $light-bg-gradient-from 4%, $light-bg-gradient-to 70%), url("/assets/light/hero1.png") no-repeat;
     background-size: 100%;
     color: white;
     .container>.breadcrumb>a {
